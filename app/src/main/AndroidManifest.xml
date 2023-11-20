@@ -13,13 +13,20 @@
         android:theme="@style/Theme.Alpha"
         tools:targetApi="31">
         <activity
-            android:name=".Transação"
+            android:name=".FormListaTransacoes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FluxoDeCaixa"
             android:exported="false" />
         <activity
             android:name=".Transacao"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FormInserirTransacao"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

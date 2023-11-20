@@ -1,14 +1,10 @@
 package com.example.alpha;
 
 public class Transacao {
-    /*variavel tipo Data */
     private String tipo, categoria, descricao;
     private double valor;
 
-    public Transacao(){
-
-    }
-    public void novaTransacao (String tipo, String categoria, String descricao, double valor){
+    public Transacao(String tipo, String categoria, String descricao, double valor){
         this.categoria = categoria;
         this.descricao = descricao;
         this.tipo = tipo;
@@ -31,6 +27,8 @@ public class Transacao {
     }
 
     public String getTudo(){
-        return categoria + " " + descricao + " " + tipo + " " + String.valueOf(valor);
+        return "\nTipo " + tipo + " \nCategoria: " + categoria + ". \nDescrição: " + descricao + ". \nValor " + String.valueOf(valor);
     }
+
+
 }
